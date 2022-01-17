@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--  posts.items was there because of the pagination function-->
+    {% for post in posts.items %}
+        <article class="media content-section">
+            <!--To display the profile picture-->             <!--to fetch data from the project directory against the profile pic-->
+            <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <!--displaying the current post my clicking on the link-->
+                    <!--('user_posts', username=post.author.username) for displaying all post created by the Poster only-->
+                    <a class="mr-2" href="{{ url_for('users.user_posts', username=post.author.username) }}">{{ post.author.username }}</a>
+                    <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+                </div>
+                <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">{{ post.title }}</a></h2>
+                <p class="article-content">{{ post.content|safe }}</p>
+            </div>
+        </article>
+    {% endfor %}
+    <!--page number to display and it arrangement 1..567..13-->
+    {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+        {% if page_num %}
+            <!--current page is same as the page number-->
+            {% if posts.page == page_num %}
+            <!--deep button for the current-->
+            <a class="btn btn-info mb-4" href="{{ url_for('main.home', page=page_num) }}"></a>
+            {% else %}
+            <a class="btn btn-outline-info mb-4" href="{{ url_for('main.home', page=page_num) }}"></a>
+            {% endif %}
+        {% else %}
+            .....
+        {% endif %}
+    {% endfor %}
+{% endblock content %}

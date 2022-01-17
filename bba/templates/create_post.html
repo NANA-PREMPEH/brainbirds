@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST" , action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <!--to extract the current url name of the page as name/title of the Form-->
+            <legend class="border-bottom mb-4">{{ legend }}</legend>
+
+            <div class="form-group">
+                {{ form.title.label(class="form-control-label") }}
+                <!--checking for errors if there is any error in the data entered-->
+                {% if form.title.errors %}
+                {{ form.title(class="form-control form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.title.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.title(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.content.label(class="form-control-label") }}
+                <!--checking for errors if there is any error in the data entered-->
+                {% if form.content.errors %}
+                {{ form.content(class="form-control form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.content.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.content(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <!-- #to call ckeditor.config() and pass the CKEditorField attribute’s name -->
+            {{ ckeditor.load() }}
+            {{ ckeditor.config(name='content') }}
+
+        </fieldset>
+        <div class="form-group">
+            <!--btn btn-ourline-info-->
+            {{ form.submit(class="btn btn-outline-dark") }}
+
+        </div>
+        
+    </form>
+</div>
+{% endblock content %}

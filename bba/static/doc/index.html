@@ -1,0 +1,451 @@
+<!DOCTYPE html> 
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	
+	<title>Kinder v1.1 - Responsive and Clean HTML Template Documentation</title>
+
+	
+	<meta name="description" content="Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form here. Thanks so much!">
+	<meta name="author" content="ThemeREX">
+	<meta name="copyright" content="ThemeREX">
+	<meta name="date" content="2013-09-30T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="css/style.css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css' />
+	
+	<script src="js/jquery.1.6.4.js"></script>
+    <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+    <script src="js/script.js"></script>
+	
+	
+</head>
+
+<body>
+<div class="tail-right"></div>
+	<header id="header">
+		<div class="wrapper">
+			<div class="doc-title"><span>Kinder</span> - Responsive and Clean HTML Template Documentation by <a href="http://themeforest.net/user/themerex/portfolio" target="_blank" title="Our portfolio">ThemeREX</a></div>
+			<a href="#" class="demo-link" target="_blank">View Demo</a>
+		</div>
+	</header>
+	<div id="main-wrapper">
+		
+		<div id="main" class="clearfix">
+			<aside id="sidebar" class="sidebar">
+				<div id="logo"><span>Kinder</span></div>
+				<ul id="doc-nav">
+                    <li><a class="parent" href="#structure">HTML Structure</a>
+                        <ul>
+                            <li><a href="#background">Background and color</a></li>
+                            <li><a href="#bg_img">Image background</a></li>
+                            <li><a href="#social">Social</a></li>
+                            <li><a href="#widgets">Widgets</a></li>
+                            <li><a href="#post">Single post</a></li>
+                            <li><a href="#typography">Typography</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </li>
+
+	    			<li><a href="#psd">PSD Files</a></li>
+					<li><a href="#sources">Sources and Credits</a></li>
+                    <li><a href="#support">Support</a></li>
+				</ul>
+			</aside>
+			<div id="content">
+
+                <section id="structure">
+                    <h3>HTML Structure</h3>
+                    <p><strong>Setting the panel </strong></p>
+                    <p>
+                        <b>Scripts and styles responsible for the output and settings of the the panel:</b>
+                        <br>
+                        directory site.../custom_tools/js/custom_tools.js
+                        <br>
+                        directory site.../custom_tools/js/customizer.js
+                    </p>
+                    <p>
+                        <b>Adding the panel:</b>
+                        <br>
+                        directory site.../custom_tools/js/custom_tools.js
+                        <br>
+                        directory site.../custom_tools/js/customizer.js
+
+                    </p>
+                    <pre>
+&lt;link rel="stylesheet" type="text/css" media="all" href="custom_tools/css/custom_tools.css"&gt;
+&lt;script src="custom_tools/js/customizer.js"&gt;&lt;/script&gt;
+</pre>
+                 </section>
+
+                <section id="background">
+                    <h3>Background and color</h3>
+                    <p>
+                        You can change the background by adding class into the tag  &lt;body&gt;
+                    </p>
+                    <pre>&lt;body class="bg_pattern_0"&gt;<hr>&lt;body class="bg_pattern_1"&gt;<hr>&lt;body class="bg_pattern_2"&gt;<hr>&lt;body class="bg_pattern_3"&gt;<hr>&lt;body class="bg_pattern_4"&gt;<hr>&lt;body class="bg_pattern_5"&gt;<hr>&lt;body class="bg_pattern_6"&gt;<hr>&lt;body class="bg_pattern_7"&gt;<hr>&lt;body class="bg_pattern_8"&gt;<hr>&lt;body class="bg_pattern_9"&gt;</pre>
+
+                    <p>
+                        To edit basic Kinder color scheme you need to add style table before closing tag &lt;/head&gt;, as well as in  "kinder.css" you need to replace the initial color #069eed with the color you need.
+                    </p>
+                    <pre>&lt;link rel="stylesheet" href="css/kinder.css" type="text/css" media="all" /&gt;</pre>
+                </section>
+
+                <section id="bg_img">
+                    <h3>Image background</h3>
+                    <p>
+                        <img alt="" src="images/bg_img.jpg">
+                    </p>
+                    <p>
+                        You can change the background by adding class into the tag  &lt;body&gt;
+                    </p>
+                    <pre>&lt;body class="bg_image_1"&gt;<hr>&lt;body class="bg_image_2"&gt;<hr>&lt;body class="bg_image_3"&gt;<hr>&lt;body class="bg_image_4"&gt;<hr>&lt;body class="bg_image_5"&gt;<hr>&lt;body class="bg_image_6"&gt;</pre>
+
+                    </section>
+
+                <section id="social">
+                    <h3>Social icons</h3>
+                    <p>
+                        href="#" - a link to your social page
+                        &lt;a href="http://facebook.com/themerex"&gt;
+                    </p>
+                    <p>
+                        <img alt="" src="images/soc.jpg">
+                    </p>
+<pre>
+&lt;div class="socPage"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;a class="social_icons social_facebook" target="_blank" href="http://facebook.com"&gt;
+                &lt;span&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class="social_icons social_twitter" target="_blank" href="http://twitter.com"&gt;
+                &lt;span&gt;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+                    <h4>Social Share icons</h4>
+                    <p>
+                        To link up the sharing social buttons, you must change &lt;... onclick="window.open('#'); ...&gt; to<br/> &lt;... onclick="window.open('https://twitter.com/share?text=TEXT-EXAMPLE'); ...&gt;
+                    </p>
+                    <p>
+                        <img alt="" src="images/soc2.jpg">
+                    </p>
+                    <pre>
+&lt;a class="fa-share-alt shareDrop" title="Share" href="#"&gt;Share&lt;/a&gt;
+&lt;ul class="share-social shareDrop" style=""&gt;
+    &lt;li&gt;
+        &lt;a href="#" class="share-item" onclick="window.open('#');"&gt;
+            &lt;img  src="img/social/twitter_color.png" alt="twitter"&gt;Twitter
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="#" class="share-item" onclick="window.open('#');"&gt;
+            &lt;img  src="img/social/facebook_color.png" alt="facebook"&gt;Facebook
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="#" class="share-item" onclick="window.open('#');"&gt;
+            &lt;img  src="img/social/pinterest_color.png" alt="pinterest"&gt;Pinterest
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                </section>
+
+                <section id="widgets">
+                    <h3>Sidebar widget example</h3>
+
+                    <pre>
+&lt;aside class="widgetWrap hrShadow widget widget_categories"&gt;
+    &lt;h3 class="title"&gt;Categories&lt;/h3&gt;       
+    &lt;ul&gt;
+        &lt;li class="cat-item"&gt;
+            &lt;a href="categories_slider.html"&gt;Categories slider&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="cat-item"&gt;
+            &lt;a href="gallery_demo.html"&gt;Gallery demo&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/aside&gt;
+</pre>
+
+                </section>
+
+                <section id="post">
+                    <h3>Single post example</h3>
+                    <p>
+                        <img alt="" src="images/post.jpg">
+                    </p>
+                    <pre>
+&lt;article class="hrShadow post margin_bottom_small"&gt;
+    &lt;h2 class="post_title text-center"&gt;
+        &lt;a href="blog_post_review_with_sidebar.html"&gt;Unique Blog Style!&lt;/a&gt;
+    &lt;/h2&gt;
+    &lt;div class="sc_section sc_aligncenter col-sm-8 post_thumb thumb margin_bottom_small"&gt;
+        &lt;a href="blog_post_review_with_sidebar.html"&gt;
+            &lt;img alt="Unique Blog Style!" src="img/9435123826_a4c3b35c08_o-714x402.jpg"&gt;
+        &lt;/a&gt; 
+    &lt;/div&gt;
+    &lt;div class="postStandard"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="postSharing"&gt;
+        &lt;ul&gt;
+            &lt;li class="squareButton light ico"&gt;
+                &lt;a class="fa-link" title="More" 
+                href="blog_post_review_with_sidebar.html"&gt;More&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="squareButton light ico"&gt;
+                &lt;a class="fa-eye" title="Views - 805" 
+                href="blog_post_review_with_sidebar.html"&gt;805&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="squareButton light ico"&gt;
+                &lt;a class="fa-comment" title="Comments - 4" 
+                href="blog_post_review_with_sidebar.html#comments"&gt;4&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="squareButton light ico"&gt;
+                &lt;a class="fa-star" title="Rating - 61.8" 
+                href="blog_post_review_with_sidebar.html"&gt;61.8&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="squareButton light ico likeButton like" data-postid="34" 
+            data-likes="26" data-title-like="Like" data-title-dislike="Dislike"&gt;
+                &lt;a class="fa-heart" title="Like - 26" href="#"&gt;
+                    &lt;span class="likePost"&gt;26&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="post_info infoPost"&gt;
+    Posted 
+        &lt;a href="blog_post_review_with_sidebar.html" 
+        class="post_date"&gt;February 25, 2014&lt;/a&gt;
+        &lt;span class="separator"&gt;|&lt;/span&gt;
+        by &lt;a href="#" class="post_author"&gt;John Doe&lt;/a&gt;
+        &lt;span class="separator"&gt;|&lt;/span&gt;
+        &lt;span class="post_cats"&gt;
+            in
+            &lt;a class="cat_link" href="features_post_formats.html"&gt;Post Formats&lt;/a&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/article&gt;
+</pre>
+
+                </section>
+
+                <section id="typography">
+                    <h3>Typography</h3>
+                    <p>
+                        <img alt="" src="images/typography.jpg">
+                    </p>
+                    <p>
+                        Alignement (positioning) can be changed by adding one of the classes "sc_alignleft", "sc_alignright", "sc_aligncenter", "sc_alignnone".
+                    </p>
+                    <pre>
+&lt;div class="sc_section sc_alignright"&gt; 
+    &lt;figure class="sc_image  sc_image_shape_square"&gt;
+        &lt;img src="img/clock_light.png" alt=""&gt;
+        &lt;figcaption&gt;
+            &lt;span&gt;This image aligned right&lt;/span&gt;
+        &lt;/figcaption&gt;
+    &lt;/figure&gt; 
+&lt;/div&gt;
+</pre>
+                    <h4>Highlight</h4>
+                    <p>
+                        For light effect we should use classes "sc_highlight_style_1", "sc_highlight_style_2".
+                    </p>
+                    <pre>
+Eum, explicabo sapiente debitis consequuntur veniam dolorem fuga ipsa corrupti quod 
+adipisci voluptatum aliquid &lt;span class="sc_highlight sc_highlight_style_1"&gt;
+dolores voluptatibus id magni impedit quis et&lt;/span&gt; odit provident molestiae 
+deleniti nisi repellat pariatur tenetur ad. Quaerat, animi, officia tenetur tempore 
+accusantium architecto at voluptatibus repudiandae iusto rem possimus doloremque 
+officiis quos eum inventore odio velit? Dolor, sequi, cumque, eum, dolorum fugiat 
+minima ex consequuntur &lt;span class="sc_highlight sc_highlight_style_2"&gt;dolore 
+molestiae voluptatum&lt;/span&gt; aperiam id vel qui a omnis debitis dolorem corporis?
+</pre>
+                </section>
+
+                <section id="portfolio">
+                    <h3>Portfolio example</h3>
+
+                    <p>
+                        <img alt="" src="images/portfolio.jpg">
+                    </p>
+                    <pre>
+&lt;article class="isotopeElement hover_Cube isotopeElementShow"&gt;
+    &lt;div class="hover hoverCubeShow"&gt;
+        &lt;div class="thumb"&gt;
+            &lt;img alt="Maecenas tristique sem ante" 
+            src="img/portfolio/masonry6-383x245.jpg"&gt;
+        &lt;/div&gt;
+        &lt;div class="folioShowBlock"&gt;
+            &lt;div class="folioContentAfter"&gt;
+                &lt;h4&gt;
+                    &lt;a href="#"&gt;Maecenas tristique sem ante&lt;/a&gt;
+                &lt;/h4&gt;
+                &lt;p&gt;Maecenas tristique sem ante. Donec imperdiet pretium sodales. 
+                Sed in eros fermentum, facilisis magna eu, tempus mauris. Curabitur 
+                mollis lacus ac... &lt;/p&gt;
+                &lt;div class="masonryInfo"&gt;
+                    Posted
+                    &lt;a href="#" class="post_date"&gt;March 16, 2014&lt;/a&gt;
+                    &lt;span class="separator"&gt;|&lt;/span&gt;
+                    &lt;span class="post_cats"&gt;
+                        &lt;a class="cat_link" href="#"&gt;1 columns,&lt;/a&gt;
+                        &lt;a class="cat_link" href="#"&gt;2 columns,&lt;/a&gt;
+                        &lt;a class="cat_link" href="#"&gt;3 columns,&lt;/a&gt;
+                        &lt;a class="cat_link" href="#"&gt;4 columns,&lt;/a&gt;
+                        &lt;a class="cat_link" href="#"&gt;Portfolio Grid&lt;/a&gt; 
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/article&gt;
+</pre>
+                    <h4>Portfolio category</h4>
+                    <p>
+                        Filtration in portfolio block is performed in case if the filter is assigned a class of portfolio element's block you need.
+                        data-filter=".flt_65" will be filtering all the portolio elements that contains class "flt_65".
+                    </p>
+                    <pre>
+&lt;div class="isotopeFiltr"&gt;
+    &lt;ul&gt;
+        &lt;li class="squareButton active"&gt;
+            &lt;a href="#" data-filter="*"&gt;All&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="squareButton"&gt;
+            &lt;a href="#" data-filter=".flt_65"&gt;clear&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="squareButton"&gt;
+            &lt;a href="#" data-filter=".flt_36"&gt;Design&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="squareButton"&gt;
+            &lt;a href="#" data-filter=".flt_66"&gt;exclusive&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+                </section>
+
+                <section id="skills">
+                    <h3>Skills</h3>
+                    <p>
+                        <img alt="" src="images/skills.jpg">
+                    </p>
+                    <p>
+                        To change color of the pie chart you need to change "data-color" in html.
+                    </p>
+                    <pre>
+...
+data-color="#069eed"
+...
+
+</pre>
+
+                </section>
+
+                <section id="contacts">
+                    <h3>Contact form</h3>
+                    An e-mail of a message receiver from the contact form can be specified in the file
+                    <br>
+                    directory site...include/sendmail.php, line 9:
+                    <pre>$contact_email = 'your_mail@mail.com';</pre>
+
+                    <h4>Google Map</h4>
+                    <p>
+                        Address for the map should be specified in  site...js/map.js, line 11:
+                    </p>
+                    <pre>"address=san francisco, CA 94102, US"</pre>
+                </section>
+
+                <section id="psd">
+                    <h3>PSD Files</h3>
+                    <p>You will find PSD folder in our archive. PSD fiels will help change design or you may use them at your discretion.</p>
+                </section>
+
+                <section id="sources">
+                    <h3>Sources and Credits</h3>
+                    <p>This section discloses the sources of various files used within the theme and describes their function. Use this section to gain an understanding on how the theme functions behind the scenes if considering any type of modification.</p>
+                    <ul>
+                        <li>
+                            Fonts:
+                            <ul>
+                                <li>Open Sans (non standard)</li>
+                                <li>Fontello (non standard, icons set)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>All non-standard fonts are from Google Web Fonts and Fontello icons set</p>
+                    <p>
+                        We have used the pictures from:
+                        <br>
+                        http://www.bigstockphoto.com/
+                    </p>
+                    <p>All images are copyrighted to their respective owners and not available for download with this theme.</p>
+                </section>
+
+                <section id="support">
+                    <p><strong>Additional information from ThemeREX:</strong></p>
+                    <div class="user-html"><p>“Theme Rex” support team is happy to greet you here!
+                        Our operators and developers are always glad to help our customers.
+                        Should you have any questions, you may contact us for support:</p>
+
+
+                            <p>10.00 – 19.00 (CET), Monday till Friday.</p>
+
+
+                            <p><strong>What is important to know about ThemeREX Support Policy</strong>
+                        </p><ul>
+                        <li>To get a pre-purchase advice, you may post in the theme’s forum</li>
+                        <li>To get a response more promptly, you are recommended to use our Ticket-system (just click on banner “Support Sys” on the item page)</li>
+                        <strong>Important!</strong> For correct work of Ticket-system, you mustn’t switch cookies in your browser off
+                        <li>We try to answer your questions within 5-10 hours. However, if any delay occurs it doesn’t mean that we forgot about you. Some of the issues require testing and analyzing, so we could help you more 					profoundly</li>
+                        </ul>
+
+
+                            <p>We love to intercommunicate with our customers from all over the world. We always love to explain how our themes work. <strong>However, sometimes we have to say No:</strong></p>
+
+
+                        <ul>
+                        <li>Please, note! We do not support queries if you do not have a purchase code</li>
+                        <li>Item support does not include:</li>
+                        <ul><li>        Customization and installation services</li>
+                        <li>        Support for third party software and plug-ins</li></ul>
+                        </ul>
+
+                            <p><strong>How to find a purchase key (<a href="http://themerex.net/wp-content/uploads/2013/10/10159702133_9b3b4eeeec_o.png" rel="nofollow">see the screenshot</a>):</strong>
+                        </p><ul>
+                        <li>open the ‘downloads’ tab in your account on ThemeForest</li>
+                        <li>find our theme in the list of products</li>
+                        <li>click ‘download’ button, and in the drop down meny select “license sertificate &amp; purchase code”</li>
+                        </ul>
+                    </div>
+				</section>
+
+				<section>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form from our Profile Page on ThemeForest. Thank you so much!</section>
+				<h4 style="margin-left:50px">ThemeREX</h4>
+            </div>
+		</div>
+	</div>
+</body>
+</html>
