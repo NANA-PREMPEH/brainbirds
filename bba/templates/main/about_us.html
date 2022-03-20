@@ -1,6 +1,5 @@
 {% extends "includes/layout.html" %}
-
-
+{% block content %}
 <section id="topOfPage" class="topTabsWrap color_section">
     <div class="container">
         <div class="row">
@@ -24,10 +23,11 @@
             <div class="col-sm-12 sc_column_item"> 
                 <div class="col-sm-6 sc_column_item margin_bottom_mini margin_right_mini"> 
                     <figure class="sc_image  sc_image_shape_square">
-                        <img src="img/11.jpg" alt="">
+                        <!-- <img src="img/11.jpg" alt=""> -->
+                        <img src="{{ url_for('static', filename='img/bba/about_us_pic.jpg')}}" alt="about_us_pic not available"/>
                     </figure> 
                 </div>
-                <h1>Few words about Kindergarten</h1>
+                <h1>Few words about BrainBirds Academy</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
             </div> 
@@ -39,7 +39,8 @@
                     <div class="col-md-3 col-sm-6 margin_bottom_small">
                         <div class="sc_team_item">
                             <div class="sc_team_item_avatar">
-                                <img alt="stuff-2.jpg" src="img/team/stuff-2-370x370.jpg">
+                                <!-- <img alt="stuff-2.jpg" src="img/team/stuff-2-370x370.jpg"> -->
+                                <img src="{{ url_for('static', filename='img/bba/staff_1.jpg') }}" alt="staff_1 not available"/>
                                 <div class="sc_team_item_description"> 
                                     Aliquam erat volutpat. Nulla pulvinar scelerisque dui, ac elementum dolor sagittis eget. 
                                 </div>
@@ -75,7 +76,8 @@
                     <div class="col-md-3 col-sm-6 margin_bottom_small">
                         <div class="sc_team_item">
                             <div class="sc_team_item_avatar">
-                                <img alt="stuff-3.jpg" src="img/team/stuff-3-370x370.jpg">
+                                <!-- <img alt="stuff-3.jpg" src="img/team/stuff-3-370x370.jpg"> -->
+                                <img src="{{ url_for('static', filename='img/bba/staff_2.jpg') }}" alt="staff_2 not available"/>
                                 <div class="sc_team_item_description"> 
                                     Cras sodales, justo et rutrum consequat, elit magna semper augue, quis viverra velit orci quis diam. Sed vestibulum porta tellus, sed cursus velit laoreet non. 
                                 </div>
@@ -106,7 +108,8 @@
                     <div class="col-md-3 col-sm-6 margin_bottom_small">
                         <div class="sc_team_item">
                             <div class="sc_team_item_avatar">
-                                <img alt="stuff-4.jpg" src="img/team/stuff-4-370x370.jpg">
+                                <!-- <img alt="stuff-4.jpg" src="img/team/stuff-4-370x370.jpg"> -->
+                                <img src="{{ url_for('static', filename='img/bba/staff_3.jpg') }}" alt="staff_3 not available"/>
                                 <div class="sc_team_item_description"> 
                                     Donec vestibulum elementum massa id tempor. Cras malesuada sapien mauris, quis tincidunt metus euismod sit amet. Pellentesque tempor volutpat leo, eget bibendum risus mattis et 
                                 </div>
@@ -137,7 +140,8 @@
                     <div class="col-md-3 col-sm-6 margin_bottom_small">
                         <div class="sc_team_item">
                             <div class="sc_team_item_avatar">
-                                <img alt="stuff-3.jpg" src="img/team/stuff-1-370x370.jpg">
+                                <!-- <img alt="stuff-3.jpg" src="img/team/stuff-1-370x370.jpg"> -->
+                                <img src="{{ url_for('static', filename='img/bba/staff_4.jpg') }}" alt="staff_ not available"/>
                                 <div class="sc_team_item_description"> 
                                     Cras sodales, justo et rutrum consequat, elit magna semper augue, quis viverra velit orci quis diam. Sed vestibulum porta tellus, sed cursus velit laoreet non. 
                                 </div>
@@ -164,143 +168,437 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>                       
-                </div>
-                <div class="sc_line sc_line_style_shadow margin_bottom_mini"></div>
-                <div class="row">
-                    <div class="col-md-8 col-sm-12">
-                        <div class="sc_skills sc_skills_arc margin_bottom_mini" data-type="arc" data-subtitle="Skills">
-                            <div class="sc_skills_legend">
-                                <h2>Web skills</h2>
-                                <ul>
-                                    <li>JavaScript</li>
-                                    <li>CSS3</li>
-                                    <li>HTML5</li>
-                                    <li>PHP</li>
-                                    <li>MySQL</li>
+                    </div>     
+                    <div class="col-md-3 col-sm-6 margin_bottom_small">
+                        <div class="sc_team_item">
+                            <div class="sc_team_item_avatar">
+                                <!-- <img alt="stuff-3.jpg" src="img/team/stuff-1-370x370.jpg"> -->
+                                <img src="{{ url_for('static', filename='img/bba/staff_5.jpg') }}" alt="staff_ not available"/>
+                                <div class="sc_team_item_description"> 
+                                    Cras sodales, justo et rutrum consequat, elit magna semper augue, quis viverra velit orci quis diam. Sed vestibulum porta tellus, sed cursus velit laoreet non. 
+                                </div>
+                            </div>
+                            <div class="sc_team_item_info">
+                                <h3 class="sc_team_item_title">Matthew Perry</h3>
+                                <div class="sc_team_item_position theme_accent2">teacher</div>
+                                <ul class="sc_team_item_socials">
+                                    <li>
+                                        <a class="social_icons social_facebook" target="_blank" href="http://facebook.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social_icons social_twitter" target="_blank" href="http://twitter.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social_icons social_rss" target="_blank" href="http://rss.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
-                            <div id="sc_skills" class="sc_skills_arc_canvas">
-
+                        </div>
+                    </div>  
+                    <div class="col-md-3 col-sm-6 margin_bottom_small">
+                        <div class="sc_team_item">
+                            <div class="sc_team_item_avatar">
+                                <!-- <img alt="stuff-3.jpg" src="img/team/stuff-1-370x370.jpg"> -->
+                                <img src="{{ url_for('static', filename='img/bba/staff_6.jpg') }}" alt="staff_ not available"/>
+                                <div class="sc_team_item_description"> 
+                                    Cras sodales, justo et rutrum consequat, elit magna semper augue, quis viverra velit orci quis diam. Sed vestibulum porta tellus, sed cursus velit laoreet non. 
+                                </div>
                             </div>
-                            <div class="sc_skills_data">
-                                <div class="arc">
-                                    <input type="hidden" class="text" value="JavaScript">
-                                    <input type="hidden" class="percent" value="95">
-                                    <input type="hidden" class="color">
+                            <div class="sc_team_item_info">
+                                <h3 class="sc_team_item_title">Matthew Perry</h3>
+                                <div class="sc_team_item_position theme_accent2">teacher</div>
+                                <ul class="sc_team_item_socials">
+                                    <li>
+                                        <a class="social_icons social_facebook" target="_blank" href="http://facebook.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social_icons social_twitter" target="_blank" href="http://twitter.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social_icons social_rss" target="_blank" href="http://rss.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-md-3 col-sm-6 margin_bottom_small">
+                        <div class="sc_team_item">
+                            <div class="sc_team_item_avatar">
+                                <!-- <img alt="stuff-3.jpg" src="img/team/stuff-1-370x370.jpg"> -->
+                                <img src="{{ url_for('static', filename='img/bba/staff_7.jpg') }}" alt="staff_ not available"/>
+                                <div class="sc_team_item_description"> 
+                                    Cras sodales, justo et rutrum consequat, elit magna semper augue, quis viverra velit orci quis diam. Sed vestibulum porta tellus, sed cursus velit laoreet non. 
                                 </div>
-                                <div class="arc">
-                                    <input type="hidden" class="text" value="CSS3">
-                                    <input type="hidden" class="percent" value="90">
-                                    <input type="hidden" class="color">
+                            </div>
+                            <div class="sc_team_item_info">
+                                <h3 class="sc_team_item_title">Matthew Perry</h3>
+                                <div class="sc_team_item_position theme_accent2">teacher</div>
+                                <ul class="sc_team_item_socials">
+                                    <li>
+                                        <a class="social_icons social_facebook" target="_blank" href="http://facebook.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social_icons social_twitter" target="_blank" href="http://twitter.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social_icons social_rss" target="_blank" href="http://rss.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-md-3 col-sm-6 margin_bottom_small">
+                        <div class="sc_team_item">
+                            <div class="sc_team_item_avatar">
+                                <!-- <img alt="stuff-3.jpg" src="img/team/stuff-1-370x370.jpg"> -->
+                                <img src="{{ url_for('static', filename='img/bba/staff_8.jpg') }}" alt="staff_ not available"/>
+                                <div class="sc_team_item_description"> 
+                                    Cras sodales, justo et rutrum consequat, elit magna semper augue, quis viverra velit orci quis diam. Sed vestibulum porta tellus, sed cursus velit laoreet non. 
                                 </div>
-                                <div class="arc">
-                                    <input type="hidden" class="text" value="HTML5">
-                                    <input type="hidden" class="percent" value="80">
-                                    <input type="hidden" class="color">
-                                </div>
-                                <div class="arc">
-                                    <input type="hidden" class="text" value="PHP">
-                                    <input type="hidden" class="percent" value="53">
-                                    <input type="hidden" class="color">
-                                </div>
-                                <div class="arc">
-                                    <input type="hidden" class="text" value="MySQL">
-                                    <input type="hidden" class="percent" value="45">
-                                    <input type="hidden" class="color">
-                                </div>
-                            </div> 
-                        </div> 
-                    </div>
-                    <div class="col-md-4 col-sm-12"> 
-                        <h2>Our language skills</h2>
-                        <div class="sc_skills sc_skills_bar sc_skills_horizontal" data-type="bar" data-subtitle="Skills" data-dir="horizontal"> 
-                            <div class="sc_skills_info">English</div>
-                            <div class="sc_skills_item sc_skills_style_1">
-                                <div class="sc_skills_count">
-                                    <div class="sc_skills_total" data-start="0" data-stop="98" data-step="1" data-max="100" data-speed="39" data-duration="3822" data-ed="%">0</div>
-                                </div>
-                            </div> 
-                            <div class="sc_skills_info">Spanish</div>
-                            <div class="sc_skills_item sc_skills_style_1">
-                                <div class="sc_skills_count">
-                                    <div class="sc_skills_total" data-start="0" data-stop="66" data-step="1" data-max="100" data-speed="23" data-duration="1518" data-ed="%">0</div>
-                                </div>
-                            </div> 
-                            <div class="sc_skills_info">French</div>
-                            <div class="sc_skills_item sc_skills_style_1">
-                                <div class="sc_skills_count">
-                                    <div class="sc_skills_total" data-start="0" data-stop="87" data-step="1" data-max="100" data-speed="32" data-duration="2784" data-ed="%">0</div>
-                                </div>
-                            </div> 
-                            <div class="sc_skills_info">Latin</div>
-                            <div class="sc_skills_item sc_skills_style_1">
-                                <div class="sc_skills_count">
-                                    <div class="sc_skills_total" data-start="0" data-stop="82" data-step="1" data-max="100" data-speed="32" data-duration="2624" data-ed="%">0</div>
-                                </div>
-                            </div> 
-                            <div class="sc_skills_info">Others</div>
-                            <div class="sc_skills_item sc_skills_style_1">
-                                <div class="sc_skills_count">
-                                    <div class="sc_skills_total" data-start="0" data-stop="76" data-step="1" data-max="100" data-speed="11" data-duration="836" data-ed="%">0</div>
-                                </div>
-                            </div> 
-                        </div> 
-                    </div>
+                            </div>
+                            <div class="sc_team_item_info">
+                                <h3 class="sc_team_item_title">Matthew Perry</h3>
+                                <div class="sc_team_item_position theme_accent2">teacher</div>
+                                <ul class="sc_team_item_socials">
+                                    <li>
+                                        <a class="social_icons social_facebook" target="_blank" href="http://facebook.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social_icons social_twitter" target="_blank" href="http://twitter.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social_icons social_rss" target="_blank" href="http://rss.com">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
+                <!-- section divider  -->
                 <div class="sc_line sc_line_style_shadow margin_bottom_mini"></div>
+                <!-- Start About Us -->
                 <div class="row">
-                    <h2 class="text-center">Services</h2>
-
-                    <div class="sc_skills sc_skills_counter sc_skills_counter_5" data-type="counter" data-subtitle="Skills">
-                        <div class="columnsWrap sc_skills_columns"> 
-                            <div class="sc_skills_column col-md-2 col-md-offset-1 col-sm-12">
-                                <div class="sc_skills_item sc_skills_style_2">
-                                    <div class="sc_skills_count">
-                                        <div class="sc_skills_total" data-start="0" data-stop="68" data-step="1" data-max="100" data-speed="38" data-duration="2584" data-ed="%">0</div>
+                    <div class="col-sm-12">
+                        <div class="col-md-4 col-sm-12">
+                            <h3>About Us</h3>
+                            <div class="panel-group sc_accordion sc_accordion_style_1" id="accordion">
+                                <div class="panel sc_accordion_item">
+                                    <div>
+                                        <h4 class="panel-title sc_accordion_title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                Vision
+                                            </a>
+                                        </h4>
                                     </div>
-                                    <div class="sc_skills_info">Clean Design</div>
+                                    <div id="collapse1" class="panel-collapse collapse in">
+                                        <div class="sc_accordion_content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. 
+                                        </div>
+                                    </div>
                                 </div>
-                            </div> 
-                            <div class="sc_skills_column col-md-2 col-sm-6">
-                                <div class="sc_skills_item sc_skills_style_2">
-                                    <div class="sc_skills_count">
-                                        <div class="sc_skills_total" data-start="0" data-stop="72" data-step="1" data-max="100" data-speed="18" data-duration="1296" data-ed="%">0</div>
+                                <div class="panel sc_accordion_item">
+                                    <div>
+                                        <h4 class="panel-title sc_accordion_title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                                Mission
+                                            </a>
+                                        </h4>
                                     </div>
-                                    <div class="sc_skills_info">Incredible Flexible</div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="sc_accordion_content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sc_skills_column col-md-2 col-sm-6">
-                                <div class="sc_skills_item sc_skills_style_2">
-                                    <div class="sc_skills_count">
-                                        <div class="sc_skills_total" data-start="0" data-stop="98" data-step="1" data-max="100" data-speed="28" data-duration="2744" data-ed="%">0</div>
+                                <div class="panel sc_accordion_item">
+                                    <div>
+                                        <h4 class="panel-title sc_accordion_title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                                                Motto
+                                            </a>
+                                        </h4>
                                     </div>
-                                    <div class="sc_skills_info">Responsive</div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="sc_accordion_content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sc_skills_column col-md-2 col-sm-6">
-                                <div class="sc_skills_item sc_skills_style_2">
-                                    <div class="sc_skills_count">
-                                        <div class="sc_skills_total" data-start="0" data-stop="45" data-step="1" data-max="100" data-speed="15" data-duration="675" data-ed="%">0</div>
+                                <div class="panel sc_accordion_item">
+                                    <div>
+                                        <h4 class="panel-title sc_accordion_title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                                                Educational Objectives
+                                            </a>
+                                        </h4>
                                     </div>
-                                    <div class="sc_skills_info">SEO Ready</div>
-                                </div>
-                            </div>
-                            <div class="sc_skills_column col-md-2 col-sm-6">
-                                <div class="sc_skills_item sc_skills_style_2">
-                                    <div class="sc_skills_count">
-                                        <div class="sc_skills_total" data-start="0" data-stop="78" data-step="1" data-max="100" data-speed="27" data-duration="2106" data-ed="%">0</div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="sc_accordion_content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                                        </div>
                                     </div>
-                                    <div class="sc_skills_info">Free support</div>
                                 </div>
                             </div> 
                         </div>
-                    </div>
-
-
-                    
+                        <div class="col-md-4 col-sm-12">
+                            <h3>Some facts about us</h3>
+                            <div class="sc_skills sc_skills_counter" data-type="counter" data-subtitle="Skills">
+                                <div class="columnsWrap sc_skills_columns sc_skills_columns_2"> 
+                                    <div class="sc_skills_column col-sm-6">
+                                        <div class="sc_skills_item sc_skills_style_1">
+                                            <div class="sc_skills_count">
+                                                <div class="sc_skills_total" data-start="0" data-stop="999" data-step="10" data-max="1000" data-speed="25" data-duration="2498" data-ed="">0</div>
+                                            </div>
+                                            <div class="sc_skills_info">CSS3</div>
+                                        </div>
+                                    </div> 
+                                    <div class="sc_skills_column col-sm-6">
+                                        <div class="sc_skills_item sc_skills_style_2">
+                                            <div class="sc_skills_count">
+                                                <div class="sc_skills_total" data-start="0" data-stop="549" data-step="10" data-max="1000" data-speed="24" data-duration="1318" data-ed="">0</div>
+                                            </div>
+                                            <div class="sc_skills_info">HTML5</div>
+                                        </div>
+                                    </div> 
+                                    <div class="sc_skills_column col-sm-6">
+                                        <div class="sc_skills_item sc_skills_style_4">
+                                            <div class="sc_skills_count">
+                                                <div class="sc_skills_total" data-start="0" data-stop="68" data-step="1" data-max="1000" data-speed="21" data-duration="143" data-ed="">0</div>
+                                            </div>
+                                            <div class="sc_skills_info">MySQL</div>
+                                        </div>
+                                    </div> 
+                                    <div class="sc_skills_column col-sm-6">
+                                        <div class="sc_skills_item sc_skills_style_3">
+                                            <div class="sc_skills_count">
+                                                <div class="sc_skills_total" data-start="0" data-stop="174" data-step="5" data-max="1000" data-speed="25" data-duration="435" data-ed="">0</div>
+                                            </div>
+                                            <div class="sc_skills_info">PHP</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>                                        
+                        <div class="col-md-4 col-sm-12">
+                            <div class="sc_testimonials sc_testimonials_style_1 sc_testimonials_padding sc_testimonials_controls_top">
+                                <h2 class="sc_testimonials_title">Testimonials</h2>
+                                <div id="swiper_container_3" class="sc_slider sc_slider_swiper sc_slider_controls sc_slider_controls_top swiper-container3 swiper-container-horizontal">
+                                    <ul class="sc_testimonials_items swiper-wrapper">
+    
+                                        <li class="sc_testimonials_item swiper-slide">
+                                            <div class="sc_testimonials_item_content">
+                                                <div class="sc_testimonials_item_quote">
+                                                    <div class="sc_testimonials_item_text">
+                                                        Awesome, thanks for looking out for us ThemeREX.<br/>
+                                                        Money well spent.  
+                                                    </div>
+                                                </div>
+                                                <div class="sc_testimonials_item_author">
+                                                    <div class="sc_testimonials_item_avatar">
+                                                        <img src="img/testimonials/no-ava.png" alt="">
+                                                    </div>
+                                                    <div class="sc_testimonials_item_name">
+                                                        dominikhopko.com
+                                                    </div>
+                                                    <div class="sc_testimonials_item_position">
+                                                        Purchaser
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="sc_testimonials_item swiper-slide">
+                                            <div class="sc_testimonials_item_content">
+                                                <div class="sc_testimonials_item_quote">
+                                                    <div class="sc_testimonials_item_text"> 
+                                                        Best purchase i made in envato. Great Theme! 
+                                                    </div>
+                                                </div>
+                                                <div class="sc_testimonials_item_author">
+                                                    <div class="sc_testimonials_item_avatar">
+                                                        <img alt="" src="img/testimonials/469c83f03b07853b77dc3e7d65fb4964.jpeg" class="avatar avatar-50 photo">
+                                                    </div>
+                                                    <div class="sc_testimonials_item_name">
+                                                        Green2005
+                                                    </div>
+                                                    <div class="sc_testimonials_item_position">
+                                                        Purchaser
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="sc_testimonials_item swiper-slide">
+                                            <div class="sc_testimonials_item_content">
+                                                <div class="sc_testimonials_item_quote">
+                                                    <div class="sc_testimonials_item_text"> 
+                                                         Hi! I’ve just check and it work perfectly! 
+                                                    </div>
+                                                </div>
+                                                <div class="sc_testimonials_item_author">
+                                                    <div class="sc_testimonials_item_avatar">
+                                                        <img src="img/testimonials/no-ava.png" alt="">
+                                                    </div>
+                                                    <div class="sc_testimonials_item_name">
+                                                        Arnfinn Nilsen
+                                                    </div>
+                                                    <div class="sc_testimonials_item_position">
+                                                        Purchaser
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sc_testimonials_item swiper-slide">
+                                            <div class="sc_testimonials_item_content">
+                                                <div class="sc_testimonials_item_quote">
+                                                    <div class="sc_testimonials_item_text"> 
+                                                        Great theme &amp; fast Support. 
+                                                    </div>
+                                                </div>
+                                                <div class="sc_testimonials_item_author">
+                                                    <div class="sc_testimonials_item_avatar">
+                                                        <img src="img/testimonials/no-ava.png" alt="">
+                                                    </div>
+                                                    <div class="sc_testimonials_item_name">
+                                                        Revilotmalk
+                                                    </div>
+                                                    <div class="sc_testimonials_item_position">
+                                                        Purchaser
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="flex-direction-nav">
+                                    <li>
+                                        <a class="swiper-button-prev3" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="swiper-button-next3" href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>                       
+                        </div>
+                    </div>                
                 </div>
+
+                <!-- section divider  -->
+                <div class="sc_line sc_line_style_shadow margin_bottom_mini"></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Accredition and Affiliations</h2> 
+                        <div class="sc_clients_slider sc_section sc_scroll_controls sc_scroll_controls_horizontal sc_scroll_controls_type_yes">
+                            <div id="swiper_container_13" class="sc_scroll sc_scroll_horizontal swiper-container_13 scroll-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner1-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner2-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner3-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner4-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner5-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner6-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner7-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner8-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner9-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner10-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner11-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner12-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner13-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner14-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner15-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner16-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner17-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner18-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner19-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner20-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner21-120x120.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/partners/partner22-120x120.png" alt="">
+                                    </div>                 
+                                </div>
+                                <div class="swiper-scrollbar13 sc_scroll_bar"></div>
+                            </div>
+                            <ul class="flex-direction-nav">
+                                <li>
+                                    <a class="flex-prev swiper-button-prev13" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="flex-next swiper-button-next13" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+               <!-- End for About Us -->
             </div>
         </div>
     </div>   
 </section>
+
+{% endblock content %}

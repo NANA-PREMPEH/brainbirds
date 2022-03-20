@@ -124,8 +124,8 @@
                                         <ul id="mainmenu" class="nav sf-menu sf-arrows">
                                             <li
                                                 class="menu-item menu-item-has-children columns custom_view_item active">
-                                                <a href="#" class="sf-with-ul">Home</a>
-                                                <ul class="menu-panel columns">
+                                                <a href="{{ url_for('main.home') }}" class="sf-with-ul">Home</a>
+                                                <!-- <ul class="menu-panel columns">
                                                     <li>
                                                         <ul class="custom-menu-style columns sub-menu">
                                                             <li class="menu-item menu-item-has-children">
@@ -219,7 +219,7 @@
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                </ul>
+                                                </ul> -->
                                             </li>
 
                                             <!-- About Us sections -->
@@ -228,12 +228,14 @@
                                             </li>
                                             <!-- About Us Admission -->
                                             <li class="menu-item menu-item-has-children">
-                                                <a href="{{ url_for('main.admission') }}" class="sf-with-ul">Admission</a>
+                                                <a href="{{ url_for('main.admission') }}"
+                                                    class="sf-with-ul">Admission</a>
                                             </li>
 
                                             <!-- The BrainBirds-->
                                             <li class="menu-item menu-item-has-children">
-                                                <a href="{{ url_for('main.the_bb')}}" class="sf-with-ul">The BrainBirds</a>
+                                                <a href="{{ url_for('main.the_bb')}}" class="sf-with-ul">The
+                                                    BrainBirds</a>
                                             </li>
 
                                             <!-- Plans-->
@@ -241,8 +243,7 @@
                                                 <a href="{{ url_for('main.plans') }}" class="sf-with-ul">Plans</a>
                                             </li>
 
-                                            <li
-                                                class="menu-item menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children">
                                                 <a href="#" class="sf-with-ul">News/Media</a>
                                                 <ul class="menu-panel columns">
                                                     <ul class="sub-menu">
@@ -258,7 +259,7 @@
                                                         <li class="menu-item">
                                                             <a href="homepage_videobg.html">Video Gallery</a>
                                                         </li>
-                                                    
+
                                                     </ul>
                                                 </ul>
                                             </li>
@@ -266,556 +267,13 @@
 
                                             <!-- Contact Us-->
                                             <li class="menu-item menu-item-has-children">
-                                                <a href="{{ url_for('main.contact_us') }}" class="sf-with-ul">Contact Us</a>
+                                                <a href="{{ url_for('main.contact_us') }}" class="sf-with-ul">Contact
+                                                    Us</a>
                                             </li>
-                                            <li
-                                                class="menu-item current-menu-ancestor menu-item-has-children columns custom_view_item">
-                                                <a href="#" class="sf-with-ul">Features</a>
-                                                <ul class="menu-panel columns">
-                                                    <li>
-                                                        <ul class="custom-menu-style columns sub-menu">
-                                                            <li
-                                                                class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
-                                                                <a href="#" class="sf-with-ul">Toolbox</a>
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-item">
-                                                                        <a href="features_typography.html">
-                                                                            <span
-                                                                                class="menu_icon fa-paint-brush"></span>
-                                                                            Typography
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_shortcodes.html">
-                                                                            <span class="menu_icon fa-tag"></span>
-                                                                            Shortcodes
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_post_formats.html">
-                                                                            <span
-                                                                                class="menu_icon fa-bookmark-o"></span>
-                                                                            Post Formats
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_widgets.html">
-                                                                            <span class="menu_icon fa-image"></span>
-                                                                            Widgets
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_post_formats.html">
-                                                                            <span class="menu_icon fa-copy"></span>
-                                                                            Tabs Widgets
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="doc/index.html">
-                                                                            <span class="menu_icon fa-file-o"></span>
-                                                                            Documentation
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="menu-item menu-item-has-children">
-                                                                <a href="#" class="sf-with-ul">Pages</a>
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-item">
-                                                                        <a href="features_about_us.html">
-                                                                            <span class="menu_icon fa-info"></span>
-                                                                            About Us
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_pricing_tables.html">
-                                                                            <span class="menu_icon fa-money"></span>
-                                                                            Pricing Tables
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_contact_us.html">
-                                                                            <span class="menu_icon fa-phone"></span>
-                                                                            Contact Us
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_faq.html">
-                                                                            <span class="menu_icon fa-life-ring"></span>
-                                                                            FAQ
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_not_existing_page.html">
-                                                                            <span class="menu_icon fa-bookmark"></span>
-                                                                            Page 404
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="menu-item">
-                                                                        <a href="features_under_construction.html">
-                                                                            <span class="menu_icon fa-cog"></span>
-                                                                            Under Construction
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item menu-item-has-children">
-                                                <a href="#" class="sf-with-ul">Portfolio</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#" class="sf-with-ul">Classic Style</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_classic_1_column.html">1 column</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_classic_2_columns.html">2 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_classic_3_columns.html">3 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_classic_4_columns.html">4 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_classic_1_column_sidebar.html">1
-                                                                    column + sidebar</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_classic_2_columns_sidebar.html">2
-                                                                    columns + sidebar</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_classic_3_columns_sidebar.html">3
-                                                                    columns + sidebar</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#" class="sf-with-ul">Masonry Style</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_masonry_2_columns.html">2 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_masonry_3_columns.html">3 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_masonry_4_columns.html">4 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_masonry_2_columns_sidebar.html">2
-                                                                    columns + sidebar</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_masonry_3_columns_sidebar.html">3
-                                                                    columns + sidebar</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#" class="sf-with-ul">Grid style</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_grid_2_columns.html">2 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_grid_3_columns.html">3 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_grid_4_columns.html">4 columns</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#" class="sf-with-ul">Hovers</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_hover_dir.html">Hover Dir</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_grid_4_columns.html">Hover Book</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_grid_2_columns.html">Hover Shift</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_grid_3_columns.html">Hover Cube</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_hover_circle_20_effects.html">Hover
-                                                                    Circle (20 effects)</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_hover_square_14_effects.html">Hover
-                                                                    Square (14 effects)</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#" class="sf-with-ul">Portfolio Post</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_post_standard.html">Standard</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="portfolio_post_fullscreen.html">Fullscreen</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item menu-item-has-children">
-                                                <a href="#" class="sf-with-ul">Blog</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#" class="sf-with-ul">Classic Style</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item">
-                                                                <a href="features_widgets.html">With sidebar</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="features_post_formats.html">Fullwidth blog</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#" class="sf-with-ul">Masonry Style</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item">
-                                                                <a href="blog_masonry_2_columns.html">2 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="blog_masonry_3_columns.html">3 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="blog_masonry_4_columns.html">4 columns</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="blog_masonry_2_columns_sidebar.html">2 columns
-                                                                    + sidebar</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="blog_masonry_3_columns_sidebar.html">3 columns
-                                                                    + sidebar</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="blog_timeline_style.html">Timeline Style</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="features_post_formats.html">Tabs Style</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#" class="sf-with-ul">Blog Post</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item menu-item-object-post">
-                                                                <a href="blog_post_standard.html">Standard Post</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-object-post">
-                                                                <a href="blog_post_standard_with_sidebar.html">Standard
-                                                                    Post with Sidebar</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-object-post">
-                                                                <a href="blog_post_review.html">Review post</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-object-post">
-                                                                <a href="blog_post_review_with_sidebar.html">Review Post
-                                                                    with Sidebar</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-has-children">
-                                                                <a href="#" class="sf-with-ul">Gallery Post</a>
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-item menu-item-object-post">
-                                                                        <a href="blog_post_gallery_2_columns.html">2
-                                                                            columns</a>
-                                                                    </li>
-                                                                    <li class="menu-item menu-item-object-post">
-                                                                        <a href="blog_post_gallery_3_columns.html">3
-                                                                            columns</a>
-                                                                    </li>
-                                                                    <li class="menu-item menu-item-object-post">
-                                                                        <a href="blog_post_gallery_4_columns.html">4
-                                                                            columns</a>
-                                                                    </li>
-                                                                    <li class="menu-item menu-item-object-post">
-                                                                        <a
-                                                                            href="blog_post_gallery_with_attachment.html">With
-                                                                            Attachment Page</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children menu-item thumb_title custom_view_item">
-                                                <a href="#" class="sf-with-ul">Shop</a>
-                                                <ul class="menu-panel thumb_title">
-                                                    <li>
-                                                        <ul class="custom-menu-style thumb_title sub-menu">
-                                                            <li class="items_column">
-                                                                <a href="shop_category.html" class="sf-with-ul">Robotic
-                                                                    Toys</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 25, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/The-Zoomer-Robot-Dog-Toy-1-287x287.jpg">Zoomer
-                                                                            Robot Dog</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 25, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/Ty-Beanie-Boos-Fetch-the-Dalmatian-1-287x287.jpg">Ty
-                                                                            Beanie Boos</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 25, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/Teksta-Puppy-1-287x287.jpg">Teksta
-                                                                            Puppy</a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="item_placeholder">
-                                                                    <div class="thumb_wrap">
-                                                                        <img width="287" height="287"
-                                                                            alt="Zoomer Robot Dog"
-                                                                            src="img/menu/The-Zoomer-Robot-Dog-Toy-1-287x287.jpg">
-                                                                    </div>
-                                                                    <div class="item_info">
-                                                                        <div class="item_pubdate">
-                                                                            <span>Posted</span>
-                                                                            &nbsp;
-                                                                            <em>June 25, 2014</em>
-                                                                        </div>
-                                                                        <div class="item_comments">
-                                                                            <span class="icon rt-icon-chat"></span>
-                                                                            &nbsp;
-                                                                            <em>0</em>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="items_column">
-                                                                <a href="shop_category.html" class="sf-with-ul">Building
-                                                                    Sets</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 25, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/Minecraft-The-Nether-1-287x287.jpg">Minecraft
-                                                                            The Nether</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 25, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/Melting-Room-1-287x287.jpg">Melting
-                                                                            Room</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 25, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/LEGO-Superheroes-1-287x287.jpg">Lego
-                                                                            Superheroes</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 25, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/City-Great-Vehicles-1-287x287.jpg">City
-                                                                            Great Vehicles</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 25, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/Builders-of-Tomorrow-1-287x287.jpg">Builders
-                                                                            of Tomorrow</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="shop_product.html"
-                                                                            data-pubdate="June 18, 2014"
-                                                                            data-comments="0"
-                                                                            data-thumb="img/menu/LEGO-Bricks-More-2-287x287.jpg">Bricks
-                                                                            &amp; More</a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="item_placeholder">
-                                                                    <div class="thumb_wrap">
-                                                                        <img width="287" height="287"
-                                                                            alt="Minecraft The Nether"
-                                                                            src="img/menu/Minecraft-The-Nether-1-287x287.jpg">
-                                                                    </div>
-                                                                    <div class="item_info">
-                                                                        <div class="item_pubdate">
-                                                                            <span>Posted</span>
-                                                                            &nbsp;
-                                                                            <em>June 25, 2014</em>
-                                                                        </div>
-                                                                        <div class="item_comments">
-                                                                            <span class="icon rt-icon-chat"></span>
-                                                                            &nbsp;
-                                                                            <em>0</em>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children menu-item thumb custom_view_item">
-                                                <a href="blog_masonry_4_columns.html" class="sf-with-ul">Images</a>
-                                                <ul class="menu-panel thumb">
-                                                    <li>
-                                                        <ul class="custom-menu-style thumb sub-menu">
-                                                            <li>
-                                                                <a href="images_style_1.html" data-author="John Doe"
-                                                                    data-pubdate="March 8, 2014"
-                                                                    data-thumb="img/menu/masonry6-400x266.jpg"
-                                                                    data-title="Maecenas tristique sem ante"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Maecenas tristique sem ante"
-                                                                        src="img/menu/masonry6-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="images_style_2.html" data-author="John Doe"
-                                                                    data-pubdate="March 3, 2014"
-                                                                    data-thumb="img/menu/portfolio_item-400x257.jpg"
-                                                                    data-title="Vivamus pharetra justo eget"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Vivamus pharetra justo eget"
-                                                                        src="img/menu/portfolio_item-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="images_style_3.html" data-author="John Doe"
-                                                                    data-pubdate="February 28, 2014"
-                                                                    data-thumb="img/menu/9435123826_a4c3b35c08_o-400x266.jpg"
-                                                                    data-title="Sed orci odio"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75" alt="Sed orci odio"
-                                                                        src="img/menu/9435123826_a4c3b35c08_o-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="images_style_1.html" data-author="John Doe"
-                                                                    data-pubdate="February 26, 2014"
-                                                                    data-thumb="img/menu/portfolio16x9_2-400x300.jpg"
-                                                                    data-title="Ut vitae lacus pretium"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Ut vitae lacus pretium"
-                                                                        src="img/menu/portfolio16x9_2-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="images_style_2.html" data-author="John Doe"
-                                                                    data-pubdate="February 20, 2014"
-                                                                    data-thumb="img/menu/masonry4-400x300.jpg"
-                                                                    data-title="Duis consequat arcu et lacus"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Duis consequat arcu et lacus"
-                                                                        src="img/menu/masonry4-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="blog_post_review.html" data-author="John Doe"
-                                                                    data-pubdate="February 19, 2014"
-                                                                    data-thumb="img/menu/masonry3-400x266.jpg"
-                                                                    data-title="Proin vel odio eu velit pellentesque al"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Proin vel odio eu velit pellentesque al"
-                                                                        src="img/menu/masonry3-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="images_style_3.html" data-author="John Doe"
-                                                                    data-pubdate="February 18, 2014"
-                                                                    data-thumb="img/menu/masonry12-400x266.jpg"
-                                                                    data-title="Duis facilisis enim quis tortor"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Duis facilisis enim quis tortor"
-                                                                        src="img/menu/masonry12-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="images_style_1.html" data-author="John Doe"
-                                                                    data-pubdate="February 17, 2014"
-                                                                    data-thumb="img/menu/masonry1-400x266.jpg"
-                                                                    data-title="Lorem ipsum dolor sit amet"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Lorem ipsum dolor sit amet"
-                                                                        src="img/menu/masonry1-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="images_style_2.html" data-author="John Doe"
-                                                                    data-pubdate="February 16, 2014"
-                                                                    data-thumb="img/menu/Depositphotos_34399519_original-400x266.jpg"
-                                                                    data-title="Curabitur auctor adipiscing risus sed ornare"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Curabitur auctor adipiscing risus sed ornare"
-                                                                        src="img/menu/Depositphotos_34399519_original-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="images_style_3.html" data-author="John Doe"
-                                                                    data-pubdate="February 5, 2014"
-                                                                    data-thumb="img/menu/masonry10-400x266.jpg"
-                                                                    data-title="Etiam faucibus euismod sapien"
-                                                                    data-link="images_style_3.html">
-                                                                    <img width="75" height="75"
-                                                                        alt="Etiam faucibus euismod sapien"
-                                                                        src="img/menu/masonry10-75x75.jpg">
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="item_placeholder">
-                                                            <div class="thumb_wrap">
-                                                                <img width="400" alt="Maecenas tristique sem ante"
-                                                                    src="img/menu/masonry6-400x266.jpg">
-                                                            </div>
-                                                            <h4 class="item_title">
-                                                                <a href="images_style_3.html">Maecenas tristique sem
-                                                                    ante</a>
-                                                            </h4>
-                                                            <div class="item_info">
-                                                                <div class="item_pubdate">
-                                                                    <span>Posted</span>
-                                                                    &nbsp;
-                                                                    <em>March 8, 2014</em>
-                                                                </div>
-                                                                <div class="item_author">
-                                                                    <span>by</span>
-                                                                    &nbsp;
-                                                                    <em>John Doe</em>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
+
+
+
+
                                         </ul>
                                     </nav>
                                 </div>
@@ -828,14 +286,16 @@
         </header>
 
         <!--Area for the Display of other contents/pages-->
-        {% block content %}{% endblock %}
+        {% block content %}
+
+        {% endblock %}
 
 
 
 
         <section class="footerContentWrap">
 
-        
+
             <div id="googlemap_1" class="sc_googlemap"></div>
             <footer class="footerWrap footerStyleDark">
                 <div class="container footerWidget widget_area">
@@ -858,7 +318,8 @@
                                 </div>
                                 <br>
                                 <span class="sc_icon fa-home"></span>
-                                378 Main Street London England
+                                GPS: GC-010-9314,
+                                Isreal, Alhaji Accra
                                 <br>
                                 <span class="sc_icon fa-envelope"></span>
                                 info@themerex.net
@@ -951,8 +412,26 @@
                             </div>
                         </aside>
                         <aside class="col-md-3 col-sm-6 widgetWrap widget widget_flickr">
-                            <h3 class="title">Flickr</h3>
-                            <div class="flickr_images">
+                            <h3 class="title">Featured Links</h3>
+                            <div style="line-height: 250%">
+                                <span class="sc_icon fa-hand-o-right"></span>
+                                <a href="#">
+                                GPS: GC-010-9314,
+                                Isreal, Alhaji Accra
+                                </a>
+                                <br>
+                        
+                                <span class="sc_icon fa-hand-o-right"></span>
+                                <a href="#">
+                                info@themerex.net
+                                </a>
+                                <br>
+                                <span class="sc_icon fa-hand-o-right"></span>
+                                <a href="#">
+                                +1 (44) 123-45-67
+                                </a>
+                            </div>
+                            <!-- <div class="flickr_images">
                                 <div class="flickr_badge_image">
                                     <a href="http://www.flickr.com/">
                                         <img src="img/social/12334281344_d9b279095f_s.jpg" alt="A photo on Flickr"
@@ -1007,7 +486,7 @@
                                             title="New York Meetup 2012" height="75" width="75">
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                         </aside>
                         <aside class="col-md-3 col-sm-6 widgetWrap widget widget_instagram">
                             <h3 class="title">Instagram</h3>
