@@ -1,1 +1,87 @@
 {% extends "includes/layout.html" %}
+{% block content %}
+
+<section id="topOfPage" class="topTabsWrap color_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="speedBar">
+                    <a class="home" href="index.html">Home</a>
+                    <span class="breadcrumbs_delimiter"> / </span>
+                    <a class="all" href="#">All Posts</a>
+                    <span class="breadcrumbs_delimiter"> / </span>
+                    <span class="current">Contact Us</span> 
+                </div>                
+                <h3 class="pageTitle h3">Contact Us</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mainWrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="columnsWrap"> 
+                    <div class="col-sm-6 sc_column_item"> 
+                        <figure class="sc_image  sc_image_shape_square">
+                            <img src="img/contact.jpg" alt="">
+                        </figure> 
+                    </div> 
+                    <div class="col-sm-6 sc_column_item"> 
+                        <h1>We’d love to hear from you</h1>
+                        <p>Lorem ipsum dolor sit amet, has facer euismod hendrerit cu. Ei zril aliquid iudicabit has, et duo tollit oportere. Ex eos admodum accumsan prodesset, vel ex accusam accusamus. Zril integre voluptua vis ea, labore conclusionemque te vim. Ei suas vivendum neglegentur vel, ipsum aliquam has ne.</p>
+                        <h1>Business hours</h1>
+                        <p>
+                            <strong>
+                                Monday – Friday 9am to 5pm
+                                <br>
+                                Saturday – 9am to 2pm
+                                <br>
+                                Sunday – Closed
+                            </strong>
+                        </p>
+                    </div> 
+                </div>
+
+            </div>
+      
+        </div>  
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="sc_contact_form sc_contact_form_contact">
+                    <h1 class="title">Send Us a Message</h1>
+                    <form data-formtype="contact" method="post" action="include/contact-form.php">
+                        <div class="columnsWrap">
+                            <div class="col-sm-4">
+                                <label class="required" for="sc_contact_form_username">Name</label>
+                                <input id="sc_contact_form_username" type="text" name="username">
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="required" for="sc_contact_form_email">E-mail</label>
+                                <input id="sc_contact_form_email" type="text" name="email">
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="required" for="sc_contact_form_subj">Subject</label>
+                                <input id="sc_contact_form_subj" type="text" name="subject">
+                            </div>
+                        </div>
+                        <div class="message">
+                            <label class="required" for="sc_contact_form_message">Your Message</label>
+                            <textarea id="sc_contact_form_message" class="textAreaSize" name="message"></textarea>
+                        </div>
+                        <div class="sc_contact_form_button">
+                            <div class="squareButton ico">
+                                <a href="#" class="sc_contact_form_submit icon-comment">Send Message</a>
+                            </div>
+                        </div>
+                        <div class="result sc_infobox"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>   
+</section>
+
+{% endblock %}
