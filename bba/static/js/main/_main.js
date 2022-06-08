@@ -586,7 +586,7 @@ function isotope_filtr() {
 
     //Portfolio masonry columns
     if (jQuery("#style_portfolio_mc").length > 0) {
-        jQuery(".isotopeFiltr", "#style_portfolio_mc").append('<ul><li class="squareButton active"><a href="#" data-filter="*">All</a></li><li class="squareButton"><a href="#" data-filter=".flt_36">Design</a></li><li class="squareButton"><a href="#" data-filter=".flt_7">portfolio</a></li><li class="squareButton"><a href="#" data-filter=".flt_10">gallery</a></li><li class="squareButton"><a href="#" data-filter=".flt_6">masonry</a></li><li class="squareButton"><a href="#" data-filter=".flt_64">print</a></li><li class="squareButton"><a href="#" data-filter=".flt_65">clear</a></li><li class="squareButton"><a href="#" data-filter=".flt_57">portfolio masonry</a></li></ul>');
+        jQuery(".isotopeFiltr", "#style_portfolio_mc").append('<ul><li class="squareButton active"><a href="#" data-filter="*">All</a></li><li class="squareButton"><a href="#" data-filter=".flt_36">kids</a></li><li class="squareButton"><a href="#" data-filter=".flt_7">celebration</a></li><li class="squareButton"><a href="#" data-filter=".flt_10">staff</a></li><li class="squareButton"><a href="#" data-filter=".flt_6">structure</a></li><li class="squareButton"><a href="#" data-filter=".flt_64">library</a></li><li class="squareButton"><a href="#" data-filter=".flt_65">lab</a></li><li class="squareButton"><a href="#" data-filter=".flt_57">general</a></li></ul>');
     }
     //Portfolio masonry columns with sidebar
     if (jQuery("#style_portfolio_mcsb").length > 0) {

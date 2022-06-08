@@ -742,7 +742,7 @@ footer > .container > .row > [class*="col-"] {
 
 .color_section{
     color: #ffffff;
-    background-color: #f4c119;
+    background-color: #0d3283;
 }
 
 .color_section > .container {padding-top: 0; padding-bottom: 0;}
@@ -6914,6 +6914,14 @@ a.social_rss > span {
 
 .social_dribbble > span {
     background-image: url(../img/social/dribbble.png);
+}
+
+.social_email > span {
+    background-image: url(../img/social/email.png);
+}
+
+.social_phone > span {
+    background-image: url(../img/social/phone.png);
 }
 
 .widget_socials .socPage {

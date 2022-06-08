@@ -1,3 +1,5 @@
+#import bba
+import os
 import re
 from flask import render_template, request, Blueprint
 from bba.models import Post
@@ -12,7 +14,9 @@ def home():
     #paginate is the number of page to display on the web page
     #post.date_posted.desc is the arrangement for the post on th page
     # posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
-    #return render_template('homepage/homepage_standard.html')
+    # return render_template('homepage/homepage_standard.html')
+
+    # images = os.listdir(os.path.join("C:/Users/HP/Desktop/brainbirds/bba/static/img/bba/photo gallery"))
     return render_template('main/home.html')
 
 
@@ -39,3 +43,7 @@ def plans():
 @main.route("/the_bb")
 def the_bb():
     return render_template('main/the_bb.html', title='The BrainBirds')
+
+@main.route("/photo_gallery")
+def photo_gallery():
+    return render_template('main/photo_gallery.html', title='Photo Gallery')

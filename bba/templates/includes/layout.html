@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="icon" href="{{ url_for('static', filename='img/logo/BRAINBIRDS.PNG')}}" type="image/x-icon" />
+    <link rel="icon" href="{{ url_for('static', filename='img/logo/BRAINBIRDS.jpg')}}" type="image/x-icon" />
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
@@ -33,7 +33,12 @@
     <style id="theme-skin-inline-css" type="text/css"></style>
     <link rel="stylesheet" id="responsive-css" href="{{ url_for('static', filename='css/responsive.css') }}"
         type="text/css" media="all">
-    <!--<link rel="stylesheet" type="text/css" media="all" href="custom_tools/css/custom_tools.css">-->
+    <link rel="stylesheet" type="text/css" media="all" href="custom_tools/css/custom_tools.css">
+
+    <!-- Link for icons from bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+   
 
     <!--[if lt IE 9]>
         <script src="js/vendor/html5shiv.min.js"></script>
@@ -50,7 +55,7 @@
     <div id="box_wrapper">
 
         <header id="header" class="menu_right with_user_menu noFixMenu">
-            <div class="container-fluid">
+            <!-- <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="topWrap">
@@ -90,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="container-fluid">
                 <div class="row">
@@ -100,11 +105,11 @@
                                 <div class="mainmenu_area">
                                     <div class="logo logo_left with_text">
                                         <a href="{{ url_for('main.home')}}">
-                                            <img src="{{ url_for('static', filename='img/logo/BRAINBIRDS.PNG')}}"
+                                            <img src="{{ url_for('static', filename='img/logo/BRAINBIRDS.png')}}"
                                                 class="logo_main" alt="">
-                                            <img src="img/logo/logo.png" class="logo_fixed" alt="">
+                                            <img src="img/logo/BRAINBIRDS.png" class="logo_fixed" alt="">
                                             <span class="logo_text">BrainBirds Academy</span>
-                                            <span class="logo_slogan">Premium Children HTML Theme</span>
+                                            <!-- <span class="logo_slogan">Premium Children HTML Theme</span> -->
                                         </a>
                                     </div>
                                     <div class="search" title="Open/close search form">
@@ -123,7 +128,7 @@
                                     <nav id="mainmenu_wrapper" class="menuTopWrap topMenuStyleLine">
                                         <ul id="mainmenu" class="nav sf-menu sf-arrows">
                                             <li
-                                                class="menu-item menu-item-has-children columns custom_view_item active">
+                                                class="menu-item">
                                                 <a href="{{ url_for('main.home') }}" class="sf-with-ul">Home</a>
                                                 <!-- <ul class="menu-panel columns">
                                                     <li>
@@ -223,23 +228,23 @@
                                             </li>
 
                                             <!-- About Us sections -->
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item">
                                                 <a href="{{ url_for('main.about_us') }}" class="sf-with-ul">About Us</a>
                                             </li>
                                             <!-- About Us Admission -->
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item">
                                                 <a href="{{ url_for('main.admission') }}"
                                                     class="sf-with-ul">Admission</a>
                                             </li>
 
                                             <!-- The BrainBirds-->
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item">
                                                 <a href="{{ url_for('main.the_bb')}}" class="sf-with-ul">The
                                                     BrainBirds</a>
                                             </li>
 
                                             <!-- Plans-->
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item">
                                                 <a href="{{ url_for('main.plans') }}" class="sf-with-ul">Plans</a>
                                             </li>
 
@@ -248,16 +253,16 @@
                                                 <ul class="menu-panel columns">
                                                     <ul class="sub-menu">
                                                         <li class="menu-item">
-                                                            <a href="homepage_standard.html">Blog</a>
+                                                            <a href="#">Blog</a>
                                                         </li>
                                                         <li class="menu-item">
-                                                            <a href="homepage_withsidebar.html">Upcoming Events</a>
+                                                            <a href="#">Upcoming Events</a>
                                                         </li>
                                                         <li class="menu-item">
-                                                            <a href="homepage_parallax.html">Photo Gallery</a>
+                                                            <a href="{{ url_for('main.photo_gallery') }}">Photo Gallery</a>
                                                         </li>
                                                         <li class="menu-item">
-                                                            <a href="homepage_videobg.html">Video Gallery</a>
+                                                            <a href="#">Video Gallery</a>
                                                         </li>
 
                                                     </ul>
@@ -266,7 +271,7 @@
 
 
                                             <!-- Contact Us-->
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item">
                                                 <a href="{{ url_for('main.contact_us') }}" class="sf-with-ul">Contact
                                                     Us</a>
                                             </li>
@@ -288,6 +293,7 @@
         <!--Area for the Display of other contents/pages-->
         {% block content %}
 
+
         {% endblock %}
 
 
@@ -297,12 +303,12 @@
 
 
             <!-- <div id="googlemap_1" class="sc_googlemap"> -->
-                <div style="margin-left: 10px;">
+                <!-- <div style="margin-left: 10px;">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.573254377757!2d-0.2674677852862717!3d5.629832795918801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf68c38a9ded1fc6!2zNcKwMzcnNDcuNCJOIDDCsDE1JzU1LjAiVw!5e0!3m2!1sen!2sgh!4v1648484133007!5m2!1sen!2sgh"
                     width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                </div> -->
             <!-- </div> -->
             <footer class="footerWrap footerStyleDark">
                 <div class="container footerWidget widget_area">
@@ -318,8 +324,7 @@
                                 </h3>
                                 <br>
                                 <div class="sc_video_player" data-width="100%" data-height="150" data-last-width="250">
-                                    <div class="sc_video_frame sc_video_play_button"
-                                        data-video="<iframe class=&quot;video_frame&quot; src=&quot;http://www.youtube.com/embed/636Dp8eHWnM?autoplay=1&quot; width=&quot;100%&quot; height=&quot;150&quot; frameborder=&quot;0&quot; webkitAllowFullScreen=&quot;webkitAllowFullScreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; allowFullScreen=&quot;allowFullScreen&quot;></iframe>">
+                                    <div class="sc_video_frame sc_video_play_button" data-video="<iframe class=&quot;video_frame&quot; src=&quot;https://www.youtube.com/embed/MK5DFdtX4Lg?autoplay=1&quot; width=&quot;100%&quot; height=&quot;150&quot; frameborder=&quot;0&quot; webkitAllowFullScreen=&quot;webkitAllowFullScreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; allowFullScreen=&quot;allowFullScreen&quot;></iframe>">
                                         <img alt="" src="img/portfolio16x9_13-212x150.jpg">
                                     </div>
                                 </div>
@@ -329,10 +334,10 @@
                                 Isreal, Alhaji Accra
                                 <br>
                                 <span class="sc_icon fa-envelope"></span>
-                                info@themerex.net
+                                Mail
                                 <br>
                                 <span class="sc_icon fa-phone"></span>
-                                +1 (44) 123-45-67
+                                +233 24 433 6347
                             </div>
                         </aside>
                         <aside class="col-md-3 col-sm-6 widgetWrap widget widget_calendar">
@@ -430,12 +435,12 @@
 
                                 <span class="sc_icon fa-hand-o-right"></span>
                                 <a href="#">
-                                    info@themerex.net
+                                    Mail
                                 </a>
                                 <br>
                                 <span class="sc_icon fa-hand-o-right"></span>
                                 <a href="#">
-                                    +1 (44) 123-45-67
+                                    +233 24 433 6347
                                 </a>
                             </div>
                             <!-- <div class="flickr_images">
@@ -496,59 +501,59 @@
                             </div> -->
                         </aside>
                         <aside class="col-md-3 col-sm-6 widgetWrap widget widget_instagram">
-                            <h3 class="title">Instagram</h3>
+                            <h3 class="title">Photo Gallery</h3>
                             <div class="instagram-pics">
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/11062642534_c4a14959e6_s.jpg" alt="A photo on instagram"
-                                            title="Ibrahim and Adrien" height="75" width="75">
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds entrance_2.jpg') }}" alt="brainbirds entrance_2"
+                                            title="brainbirds entrance" height="75" width="75">
                                     </a>
                                 </div>
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/7694603642_e6181c8b6a_s.jpg" alt="A photo on instagram"
-                                            title="New York Meetup 2012" height="75" width="75">
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids.jpg') }}" alt="brainbirds kids"
+                                            title="brainbirds kids" height="75" width="75">
                                     </a>
                                 </div>
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/4865381192_bef72681e1_s.jpg" alt="A photo on instagram"
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_1.jpg') }}" alt="A photo on instagram"
                                             title="Collis Presenting at WebDU 2010" height="75" width="75">
                                     </a>
                                 </div>
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/13090549273_ee5c732ce1_s.jpg" alt="A photo on instagram"
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_2.jpg') }}" alt="A photo on instagram"
                                             title="Around the Envato Office - Highfive!" height="75" width="75">
                                     </a>
                                 </div>
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/10546541013_1dfd083bcd_s.jpg" alt="A photo on instagram"
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_3.jpg') }}" alt="A photo on instagram"
                                             title="#Envato CEO Collis in his office" height="75" width="75">
                                     </a>
                                 </div>
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/5840915999_2ed9fb4a81_s.jpg" alt="A photo on instagram"
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff.jpg') }}" alt="A photo on instagram"
                                             title="Degraves" height="75" width="75">
                                     </a>
                                 </div>
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/6468476079_c7db9db7cb_s.jpg" alt="A photo on instagram"
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_5.jpg') }}" alt="A photo on instagram"
                                             title="Pete After" height="75" width="75">
                                     </a>
                                 </div>
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/7694606750_4ce650332c_s.jpg" alt="A photo on instagram"
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_6.jpg') }}" alt="A photo on instagram"
                                             title="New York Meetup 2012" height="75" width="75">
                                     </a>
                                 </div>
                                 <div class="instagram_badge_image">
-                                    <a href="http://www.instagram.com/">
-                                        <img src="img/social/12334281344_d9b279095f_s.jpg" alt="A photo on instagram"
+                                    <a href="{{ url_for('main.photo_gallery') }}">
+                                        <img src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_2.jpg') }}" alt="A photo on instagram"
                                             title="Melbourne Meetup" height="75" width="75">
                                     </a>
                                 </div>
@@ -560,8 +565,9 @@
             <div class="copyWrap">
                 <div class="container copy">
                     <div class="copyright">
-                        <a href="http://themeforest.net/item/grecko-multipurpose-wordpress-theme/7755453">ThemeREX</a>
-                        © 2014 All Rights Reserved
+                        <!-- <a href="http://themeforest.net/item/grecko-multipurpose-wordpress-theme/7755453">ThemeREX</a> -->
+                        <a href="mailto:oseiprempehwilliams@gmail.com">NAPSA LIMITED</a>
+                        © 2022 All Rights Reserved
                         <a href="#">Terms of Use</a>
                         and
                         <a href="#">Privacy Policy</a>
@@ -573,11 +579,11 @@
                                     <span></span>
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a class="social_icons social_pinterest" target="_blank" href="http://pinterest.com">
                                     <span></span>
                                 </a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a class="social_icons social_twitter" target="_blank" href="http://twitter.com">
                                     <span></span>
@@ -589,15 +595,20 @@
                                 </a>
                             </li>
                             <li>
+                                <a class="social_icons social_gmail" target="_blank" href="http://youtube.com">
+                                    <span></span>
+                                </a>
+                            </li>
+                            <!-- <li>
                                 <a class="social_icons social_rss" target="_blank" href="http://rss.com">
                                     <span></span>
                                 </a>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <a class="social_icons social_dribbble" target="_blank" href="http://dribbble.com">
                                     <span></span>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,379 @@
+{% extends "includes/layout.html" %}
+
+{% block content %}
+<section id="topOfPage" class="topTabsWrap color_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="speedBar">
+                    <a class="home" href="{{ url_for('main.home') }}">Home</a>
+                    <span class="breadcrumbs_delimiter"> / </span>
+                    <a class="all" href="{{ url_for('main.about_us') }}">About us</a>
+                    <!-- <span class="breadcrumbs_delimiter"> / </span> -->
+                    <!-- <a class="all" href="#">Portfolio Masonry</a> -->
+                    <span class="breadcrumbs_delimiter"> / </span>
+                    <span class="current">Photo Gallery</span>
+                </div>
+                <h3 class="pageTitle h3">Photo Gallery</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio_mansory_columns">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="style_portfolio_mc" class="masonryWrap">
+                    <div class="isotopeFiltr"></div>
+                    <section class="masonry isotope" data-columns="3">
+
+                        <!-- Pictures for Entrance -->
+                        <div>
+                            <article class="isotopeElement flt_6 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds entrance_2.jpg') }}"
+                                        data-title="Picture for Entrance">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds entrance_2.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_6 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds entrance_1.jpg') }}"
+                                        data-title="Picture for Entrance">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds entrance_1.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            
+                            <article class="isotopeElement flt_6 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds book_shop.jpg') }}"
+                                        data-title="Picture for Entrance">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds book_shop.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <!-- Pictures for Kids -->
+                        <div>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_1.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_1.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_2.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_2.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_3.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_3.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_4.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_4.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_5.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_5.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_6.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_6.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_7.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_7.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_8.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_8.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_9.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_9.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_10.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_10.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_12.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_12.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_13.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_13.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_14.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_14.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_15.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_15.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_16.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_16.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_36 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_17.jpg') }}"
+                                        data-title="BrainBirds Academy Kids at Class">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds kids_17.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Pictures for staff -->
+                        <div>
+                            <article class="isotopeElement flt_10 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff.jpg') }}"
+                                        data-title="Picture for staff">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_10 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_1.jpg') }}"
+                                        data-title="Picture for staff">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_1.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_10 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_2.jpg') }}"
+                                        data-title="Picture for staff">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_2.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="isotopeElement flt_10 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_3.jpg') }}"
+                                        data-title="Picture for staff">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_3.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+
+                            <article class="isotopeElement flt_10 isotopeElementShow">
+                                <div class="isotopePadding">
+                                    <div class="thumb hoverIncrease"
+                                        data-image="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_4.jpg') }}"
+                                        data-title="Picture for staff">
+                                        <img alt="BrainBirds Academy Kids at Class"
+                                            src="{{ url_for('static', filename='img/bba/photo gallery/brainbirds staff_4.jpg') }}">
+                                    </div>
+                                    <h4>
+
+                                    </h4>
+                                </div>
+                            </article>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
